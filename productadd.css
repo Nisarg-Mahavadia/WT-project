@@ -1,0 +1,118 @@
+.section--lg {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.add-product__container {
+    justify-content: center;
+}
+
+.product-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box; /* Add this line */
+}
+
+.section__title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    gap: 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Add this line */
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+textarea.form__input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form__btn {
+    text-align: center;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .section--lg {
+        padding: 60px 0;
+    }
+
+    .product-form {
+        padding: 30px;
+    }
+}
+body {
+    background-image: url('blogin4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    /* background-color: #333; */
+}
+
+@media (max-width: 480px) {
+    .section--lg {
+        padding: 40px 0;
+    }
+
+    .product-form {
+        padding: 20px;
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+
+    .form__input,
+    .btn {
+        font-size: 14px;
+    }
+}

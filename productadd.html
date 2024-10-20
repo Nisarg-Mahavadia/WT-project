@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - Shoe Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="productadd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        /* Styles for the pop-up modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+            z-index: 1; /* Sit on top */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .modal-content h2 {
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        .close-btn {
+            background-color: #717171;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #6d6eba;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header"></header>
+
+    <main>
+        <section class="add-product section--lg">
+            <div class="add-product__container container grid">
+                <div class="product-form">
+                    <h3 class="section__title">Add New Product</h3>
+                    <form id="productForm" method="POST" enctype="multipart/form-data" class="form grid">
+                        <input type="text" name="product_name" placeholder="Product Name" class="form__input" required />
+                        <input type="number" name="product_price" placeholder="Product Price" class="form__input" required />
+                        <textarea name="product_description" placeholder="Product Description" class="form__input" required></textarea>
+                        <input type="file" name="product_image" class="form__input" accept="image/*" required />
+                        <select name="product_category" class="form__input" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="Most Selling">Shoes - Most Selling</option>
+                            <option value="Mens">Mens shoes</option>
+                            <option value="Womens">Women shoes</option>
+                            <option value="Kids">Kids Shoes</option>
+                            <option value="Running">Running Shoes</option>
+                            <option value="Gym">Gym shoes</option>
+                            <option value="Basketball">Basketball shoes</option>
+                            <option value="Football">Football shoes</option>
+                        </select>
+                        <div class="form__btn">
+                            <button class="btn" type="submit">Add Product</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for product added success message -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>Product Added Successfully!</h2>
+            <button class="close-btn" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Handle form submission
+        const productForm = document.getElementById('productForm');
+        const successModal = document.getElementById('successModal');
+        const closeModal = document.getElementById('closeModal');
+
+        // Show the modal when form is submitted
+        productForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            // Show the modal
+            successModal.style.display = 'flex';
+
+            // Optionally, you can also reset the form here
+            productForm.reset();
+        });
+
+        // Close the modal when close button is clicked
+        closeModal.addEventListener('click', function () {
+            successModal.style.display = 'none';
+        });
+
+        // Close the modal when clicking outside the modal content
+        window.addEventListener('click', function (e) {
+            if (e.target === successModal) {
+                successModal.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

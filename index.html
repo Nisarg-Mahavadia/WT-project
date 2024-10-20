@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <style>
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+            display: none;
+        }
+        #successMessage {
+            display: none;
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="comlogin.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="favourite.html" class="icon-link"><i class="fas fa-heart"></i></a>
+            <a href="addtocart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="hero12.jpg" alt="New Aerial Shoe">
+            <div class="hero-content">
+                <!-- <h2>JORDAN</h2>
+                <h1>Skywalker X</h1> -->
+                <a href="customize.html" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+
+        <section class="classics">
+            <h2>Newly Added</h2>
+            <p></p>
+            <div class="swiper classics-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="shoes.html" class="product-link" data-shoe-name="Classic 1">
+                            <img src="i-1.jpg" alt="Classic 1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="shoes.html" class="product-link" data-shoe-name="Classic 2">
+                            <img src="i-2.jpg" alt="Classic 2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="shoes.html" class="product-link" data-shoe-name="Classic 2">
+                            <img src="i-3.jpg" alt="Classic 2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="shoes.html" class="product-link" data-shoe-name="Classic 2">
+                            <img src="i-4.jpg" alt="Classic 2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="shoes.html" class="product-link" data-shoe-name="Classic 2">
+                            <img src="i-5.jpg" alt="Classic 2">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+    <section class="shop-by-sport">
+        <h2>Shop by Sport</h2>
+        <div class="swiper sport-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="running.jpg" alt="Running Shoe">
+                    <a href="running.html" class="sport-button">Running</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="basketball2.jpg" alt="Basketball Shoe">
+                    <a href="basketball.html" class="sport-button">Basketball</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="football1.jpg" alt="Football Cleat">
+                    <a href="football.html" class="sport-button">Football</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="gym.jpg" alt="Gym Shoe">
+                    <a href="gym.html" class="sport-button">Gym</a>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    </main>
+
+        <section class="image-gallery">
+            <!-- <h2>Collabration</h2> -->
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="ig-1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="contact.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="hero4.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="ig-3.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </section>
+    <main>
+        <div class="container contact-section">
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                
+                <div id="successMessage" style="display: none;">
+                    Thank you for your message. We'll get back to you soon!
+                </div>
+                
+            </div>
+            <div class="contact-image">
+                <img src="b-i.jpg" alt="Contact Us">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State 12345<br>Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="index.html">Features</a></li>
+                        <li><a href="shoes.html">Pricing</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="men.html">Shoes</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
