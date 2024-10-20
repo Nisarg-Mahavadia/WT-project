@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="customize.css">    
+    <link rel="stylesheet" href="singleproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="comlogin.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="favourite.html" class="icon-link"><i class="fas fa-heart"></i></a>
+            <a href="addtocart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <div class="headercrumb">
+        <div class="membership-text">Membership</div>
+        <a href="login.html" class="shop-btn">Sign Up</a>
+    </div>
+
+    <main id="mainContent">
+        <div class="video-section">
+            <video autoplay muted loop>
+                <source src="customise.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <section class="info-section">
+            <h2>Customize Your Perfect Shoe</h2>
+            <p>Create a unique pair of shoes that reflects your personal style. Our customization tool allows you to
+                choose from a wide range of colors, materials, and designs to make your shoes truly one-of-a-kind.</p>
+            <a href="shoes.html" class="shop-btn">Shop Now</a>
+        </section>
+
+        <section class="member-products">
+            <h2>Member Exclusive Products</h2>
+            <div class="product-slider">
+                <a href="#" class="product-card product-link" data-product-id="1">
+                    <img src="cus-1.jpg" alt="Member Shoe 1">
+                    <h3>Elite Runner</h3>
+                    <p class="price">$129.99</p>
+                </a>
+                
+                <a href="#" class="product-card product-link" data-product-id="2">
+                    <img src="cus-2.jpg" alt="Member Shoe 2">
+                    <h3>NIKE DUNK LOW PREMIUM PREMIUM FLEECA BY YOU</h3>
+                    <p class="price">Rs.13,995</p>
+                </a>
+                
+                <a href="#" class="product-card product-link" data-product-id="3">
+                    <img src="cus-3.jpg" alt="Member Shoe 3">
+                    <h3>NIKE PEGASUS 41 BY YOU</h3>
+                    <p class="price">Rs.14,995</p>
+                </a>
+      
+                <a href="#" class="product-card product-link" data-product-id="4">
+                    <img src="cus-4.jpg" alt="Member Shoe 4">
+                    <h3>NIKE AIRFORCE 1 LOW BY YOU</h3>
+                    <p class="price">12,925</p>
+                </a>
+           
+                <a href="#" class="product-card product-link" data-product-id="5">
+                    <img src="cus-5.jpg" alt="Member Shoe 5">
+                    <h3>NIKE INVINCIBLE 3 BY YOU</h3>
+                    <p class="price">Rs.19,295</p>
+                </a>
+
+                <a href="#" class="product-card product-link" data-product-id="6">
+                    <img src="cus-6.jpg" alt="Member Shoe 6">
+                    <h3>NIKE AIR MAX PLUS BY YOU</h3>
+                    <p class="price">Rs.17,495</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>What's your style ?</h2>
+            <p>Like your shoe signature, your Personal iD is any combo of letters and
+                numbers that rep you. Maybe it's a nickname, a mantra or your computer
+                password (wait, probably not a good idea). It can be almost anything! Pick
+                your PiD, and show the world who this signature shoe belongs to.</p>
+            <a href="customize.html" class="shop-btn">Customize</a>
+        </section>
+    </main>
+
+    <div id="productDetailsContainer" style="display: none;"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State 12345<br>Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="customize.js"></script>
+</body>
+</html>

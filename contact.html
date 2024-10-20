@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Eco-Friendly Products</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="contact.css"> <!-- Link to your contact CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="comlogin.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="favourite.html" class="icon-link"><i class="fas fa-heart"></i></a>
+            <a href="addtocart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError">Name is required.</div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="number" id="phone" name="phone" required>
+                    <div class="error-message" id="phoneError">Phone number is required and must be 10 digits.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="error-message" id="messageError">Message is required.</div>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="successMessage">
+                Thank you for your message. We'll get back to you soon!
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State 12345<br>Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>

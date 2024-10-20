@@ -1,0 +1,210 @@
+/* General styling for main content */
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative; /* To position error messages correctly */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input, 
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 1rem;
+    box-sizing: border-box; /* To ensure padding is included in width */
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none; /* Initially hidden */
+}
+
+/* Success message styling */
+#successMessage {
+    display: none;
+    color: green;
+    margin-top: 10px;
+}
+
+/* Header styling */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #a0a0a0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-header .logo img {
+    height: 40px;
+}
+
+.top-header .admin-link {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.top-header.hidden {
+    transform: translateY(-100%);
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('blogin6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input[type="email"] {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-section button {
+    padding: 5px 10px;
+    background-color: #475e88;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-section {
+        margin-bottom: 1.5rem;
+        flex-basis: 100%;
+    }
+}

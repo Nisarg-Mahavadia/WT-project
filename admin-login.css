@@ -1,0 +1,112 @@
+/* Admin Login Container Styles */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust based on your header and footer height */
+    padding: 20px;
+}
+
+/* Login Box Styles */
+.login-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Input Group Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none; /* Prevent interaction with the icon */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 15px 10px 40px; /* Ensures space for the icon */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group.error input {
+    border-color: red;
+}
+
+.input-group .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -20px; /* Position error message below the input field */
+    width: 100%;
+    display: block;
+}
+
+/* Button Styles */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Body Background Styling */
+body {
+    background-image: url('blogin3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+}

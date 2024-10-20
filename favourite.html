@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Products</title>
+    <link rel="stylesheet" href="favourite.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="comlogin.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="favourite.html" class="icon-link"><i class="fas fa-heart"></i></a>
+            <a href="addtocart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+    <main>
+        <table>
+            <h1>Added Shoes</h1>
+            <tr>
+
+                </td>
+                <td>
+                    <div class="product-item">
+                        <a href="singleproductpage.html?product=Classic%20Sneaker">
+                            <img src="fa-1.jpg" alt="Shoe 1">
+                            <div class="hover-icons">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h3>NIKE GT HUSTLE 3 BLUEPRINT EP</h3>
+                            <p>Rs.17,495</p>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="product-item">
+                        <a href="singleproductpage.html?product=Classic%20Sneaker">
+                            <img src="fa-2.jpg" alt="Shoe 1">
+                            <div class="hover-icons">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h3>NIKE GT CUT 3 EP</h3>
+                            <p>Rs.17,495</p>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="product-item">
+                        <a href="singleproductpage.html?product=Classic%20Sneaker">
+                            <img src="fa-3.jpg" alt="Shoe 1">
+                            <div class="hover-icons">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h3>NIKE GT  HUSTLE 3 EP ELECTRIC</h3>
+                            <p>Rs.18,095</p>
+                        </a>
+                    </div>
+                </td>  
+                <!-- Repeat this structure for all other product items -->
+                <!-- ... -->
+            </tr>
+            <!-- Repeat for other rows -->
+        </table>
+    </main>
+    <div class="container">
+        <h1>You Might also Like this</h1>
+        <div class="product-scroller">
+            <div class="product" onclick="openProduct(1)">
+                <img src="f-lp-1.jpg" alt="Product 1">
+                <h3>NIKE BLAZER MID '77 VINTAGE</h3>
+                <p>Rs.7,597</p>
+            </div>
+            <div class="product" onclick="openProduct(2)">
+                <img src="f-lp-2.jpg" alt="Product 2">
+                <h3>NIKE BLAZER PHANTOM LOW</h3>
+                <p>Rs.10,295</p>
+            </div>
+            <div class="product" onclick="openProduct(3)">
+                <img src="f-lp-3.jpg" alt="Product 3">
+                <h3>NIKE BLAZER PHANTOM '77 VINTAGE</h3>
+                <p>Rs.9,695</p>
+            </div>
+            <div class="product" onclick="openProduct(4)">
+                <img src="f-lp-4.jpg" alt="Product 4">
+                <h3>NIKE SB ZOOM BLAZER LOW X DANCER SKATEBOARD</h3>
+                <p>Rs.8,257</p>
+            </div>
+            <div class="product" onclick="openProduct(5)">
+                <img src="f-lp-5.jpg" alt="Product 5">
+                <h3>NIKE SB ZOOM BLAZER MID PREMIUM</h3>
+                <p>Rs.8,067</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State 12345<br>Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="index.html">Features</a></li>
+                        <li><a href="shoes.html">Pricing</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="men.html">Shoes</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openProduct(id) {
+            window.location.href = `singleproduct.html?id=${id}`;
+        }
+    </script>
+</body>
+</html>
