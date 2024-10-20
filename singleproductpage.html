@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Shoe Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="singleproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> 
+</head>
+<body>
+
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="comlogin.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="favourite.html" class="icon-link"><i class="fas fa-heart"></i></a>
+            <a href="addtocart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <h1 id="productName">Men Shoes</h1>
+    </div>
+
+    <main class="product-details">
+        <div class="product-images">
+            <div class="thumbnail-container">
+                <img src="single11.jpg" alt="Side 1" class="thumbnail active" onclick="changeMainImage(this.src)">
+                <img src="single2.jpg" alt="Side 2" class="thumbnail" onclick="changeMainImage(this.src)">
+                <img src="single3.jpg" alt="Side 3" class="thumbnail" onclick="changeMainImage(this.src)">
+                <img src="single4.jpg" alt="Side 4" class="thumbnail" onclick="changeMainImage(this.src)">
+            </div>
+            <div class="main-image-container">
+                <img src="s-ms-2.jpg" alt="Main Product Image" id="mainImage">
+            </div>
+        </div>
+        <div class="product-info">
+            <h2 id="productTitle">JUMPMAN MVP</h2>
+            <p class="price" id="productPrice">Rs.14,527</p>
+            <div class="specifications">
+                <h3>Size:</h3>
+                <div class="size-selector">
+                    <button class="size-option" onclick="selectSize(this)">7</button>
+                    <button class="size-option" onclick="selectSize(this)">8</button>
+                    <button class="size-option" onclick="selectSize(this)">9</button>
+                    <button class="size-option" onclick="selectSize(this)">10</button>
+                    <button class="size-option" onclick="selectSize(this)">11</button>
+                </div>
+                <h3>Color:</h3>
+                <div class="color-selector">
+                    <button class="color-option" style="background-color: black;" onclick="selectColor(this)"></button>
+                    <button class="color-option" style="background-color: white;" onclick="selectColor(this)"></button>
+                    <button class="color-option" style="background-color: red;" onclick="selectColor(this)"></button>
+                    <button class="color-option" style="background-color: blue;" onclick="selectColor(this)"></button>
+                </div>
+                <!-- <h3>Other Specifications:</h3> -->
+                <!-- <ul>
+                    <li>Material: <span id="productMaterial">Leather</span></li>
+                    <li>Style: <span id="productStyle">Casual</span></li>
+                </ul> -->
+                <p>We didn't invent the remix—but considering the material we get to sample, this one's a no-brainer. We took elements from the AJ6, 7 and 8, making them into a completely new shoe that celebrates MJ's first 3-peat championship run. With leather, textile and nubuck details, these sneakers honour one legacy while encouraging you to cement your own.</p>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </main>
+
+    <section class="similar-interests">
+        <h2>Similar Interests</h2>
+        <div class="scroller">
+            <button class="scroll-btn left">&lt;</button>
+            <div class="products-container">
+                <div class="product">
+                    <img src="f-lp-1.jpg" alt="Shoe 1">
+                    <h3>NIKE VLAZER MID '77 VINTAGE</h3>
+                    <p>Rs.7,597</p>
+                </div>
+                <div class="product">
+                    <img src="f-lp-2.jpg" alt="Shoe 2">
+                    <h3>NIKE BLAZER PHANTOM LOW</h3>
+                    <p>Rs.10,295</p>
+                </div>
+                <div class="product">
+                    <img src="f-lp-3.jpg" alt="Shoe 3">
+                    <h3>NIKE BLAZER PHANTOM '77 VINTAGE</h3>
+                    <p>Rs.9,695</p>
+                </div>
+                <div class="product">
+                    <img src="f-lp-4.jpg" alt="Shoe 4">
+                    <h3>NIKE SB ZOOM BLAZER LOW X DANCER SKATEBOARD</h3>
+                    <p>Rs.8,257</p>
+                </div>
+                <div class="product">
+                    <img src="f-lp-5.jpg" alt="Shoe 5">
+                    <h3>NIKE SB ZOOM BLAZER MID PREMIUM</h3>
+                    <p>Rs.8,067</p>
+                </div>
+                <div class="product">
+                    <img src="a-1.jpg" alt="Shoe 6">
+                    <h3>NIKE INVINCIBLE 3</h3>
+                    <p>Rs.16,147</p>
+                </div>
+            </div>
+            <button class="scroll-btn right">&gt;</button>
+        </div>
+    </section>
+    <script src="singleproduct.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State 12345<br>Country</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
